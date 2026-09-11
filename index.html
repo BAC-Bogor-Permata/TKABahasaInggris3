@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Persiapan TKA 2026 - BAC Bogor Permata</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- MathJax Configuration for LaTeX formatting -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 9999px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen antialiased selection:bg-blue-100 selection:text-blue-900">
+
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white font-black text-lg shadow-sm">
+          B
+        </div>
+        <div>
+          <span class="font-bold text-slate-800 text-sm sm:text-base tracking-tight block">
+            BAC Bogor - Permata (Persiapan TKA 2026)
+          </span>
+          <span class="text-[11px] text-slate-500 font-medium hidden sm:block">
+            TKA Bahasa Inggris • Evaluation and Appreciation
+          </span>
+        </div>
+      </div>
+      
+      <div id="header-badge" class="flex items-center space-x-2">
+        <!-- Live Countdown Timer Widget -->
+        <div id="header-timer-badge" class="hidden items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
+          <svg class="w-3.5 h-3.5 text-blue-600 animate-spin-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span class="text-slate-500 font-medium">Sisa Waktu:</span>
+          <span id="header-timer-clock" class="font-mono font-extrabold text-blue-800">15:00</span>
+        </div>
+
+        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200">
+          Periode: 14 - 20 Sep 2026
+        </span>
+        <div id="header-student-badge" class="hidden items-center space-x-1.5 pl-2 border-l border-slate-200 text-xs">
+          <span id="header-student-name" class="font-bold text-slate-800"></span>
+          <span id="header-student-class" class="px-2 py-0.5 rounded-md bg-blue-100 text-blue-800 font-semibold"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col">
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 1: WELCOMING PAGE                                                    -->
+    <!-- ========================================================================= -->
+    <section id="view-welcome" class="flex flex-col justify-center items-center my-auto py-8">
+      <div class="max-w-3xl w-full bg-white rounded-2xl shadow-xl shadow-slate-200/60 border border-slate-200 overflow-hidden">
+        <!-- Banner Accent -->
+        <div class="h-3 bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-500"></div>
+        
+        <div class="p-6 sm:p-10 space-y-8">
+          <!-- Title Requirement -->
+          <div class="text-center space-y-2">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-blue-700 tracking-tight font-sans">
+              Persiapan TKA 2026
+            </h1>
+            <p class="text-slate-600 text-base font-medium">
+              Latihan Mingguan TKA • Tim Akademik Brain Academy Bogor Permata
+            </p>
+          </div>
+
+          <div class="bg-slate-50 rounded-xl p-6 sm:p-7 border border-slate-200/80 space-y-5">
+            <div class="flex items-center space-x-2 border-b border-slate-200 pb-3">
+              <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              <h2 class="font-bold text-slate-800 text-lg">Aturan Pengerjaan Soal Latihan</h2>
+            </div>
+            
+            <ol class="space-y-3.5 text-slate-700 text-sm sm:text-base leading-relaxed">
+              <li class="flex items-start">
+                <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 text-blue-700 font-bold text-xs flex items-center justify-center mr-3 mt-0.5">1</span>
+                <span>Latihan akan terbuka untuk dikerjakan selama periode <strong class="text-slate-900 font-semibold">14 - 20 September 2026</strong>.</span>
+              </li>
+              <li class="flex items-start">
+                <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 text-blue-700 font-bold text-xs flex items-center justify-center mr-3 mt-0.5">2</span>
+                <span>Jawaban hanya bisa diklik <strong class="text-slate-900 font-semibold">1 kali</strong> ya dan pembahasan soal akan muncul setelah periode latihan berakhir.</span>
+              </li>
+              <li class="flex items-start">
+                <span class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 text-blue-700 font-bold text-xs flex items-center justify-center mr-3 mt-0.5">3</span>
+                <span>Pada akhir latihan ini, siswa dapat langsung melihat skor akhir dan analisisnya.</span>
+              </li>
+            </ol>
+
+            <div class="bg-blue-50/70 rounded-lg p-4 border border-blue-100/80 text-blue-900 text-sm font-medium leading-relaxed italic">
+              "Semangat terus ya, Brainies! Kita berikan usaha yang maksimal untuk hasil TKA yang memuaskan ya teman-teman."
+            </div>
+          </div>
+
+          <div id="deadline-status-notice" class="hidden rounded-xl p-4 border text-sm font-medium leading-relaxed"></div>
+
+          <!-- Student Identity Form Section -->
+          <div id="student-form-section" class="bg-white rounded-xl p-6 border-2 border-blue-100 shadow-sm space-y-4">
+            <div class="flex items-center space-x-2 border-b border-slate-100 pb-2.5">
+              <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+              <h3 class="font-bold text-slate-800 text-base">Identitas Siswa</h3>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="space-y-1.5">
+                <label for="input-student-name" class="block text-xs font-bold uppercase tracking-wider text-slate-600">
+                  Nama Lengkap Siswa <span class="text-rose-500">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="input-student-name" 
+                  placeholder="Masukkan nama lengkap kamu" 
+                  class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm font-medium transition-all"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="select-student-class" class="block text-xs font-bold uppercase tracking-wider text-slate-600">
+                  Kelas <span class="text-rose-500">*</span>
+                </label>
+                <div class="relative">
+                  <select 
+                    id="select-student-class" 
+                    class="w-full px-4 py-2.5 rounded-xl border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm font-medium transition-all appearance-none cursor-pointer"
+                    required
+                  >
+                    <option value="" disabled selected>-- Pilih Kelas --</option>
+                    <option value="12 IPA 1">12 IPA 1</option>
+                    <option value="12 IPA 2">12 IPA 2</option>
+                    <option value="12 IPS 1">12 IPS 1</option>
+                  </select>
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-slate-500">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-400 italic">*Pastikan identitas nama dan kelas sudah sesuai sebelum memulai latihan.</p>
+          </div>
+
+          <!-- Action Button -->
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-xs text-slate-500">
+              <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-1.5 animate-pulse"></span>
+              Sistem Ujian Siap • 10 Soal Berbobot
+            </div>
+            <button id="btn-start" onclick="startQuiz()" class="w-full sm:w-auto px-8 py-3.5 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold rounded-xl shadow-lg shadow-blue-500/25 transition-all duration-150 transform hover:-translate-y-0.5 flex items-center justify-center space-x-2">
+              <span>Mulai Pengerjaan Latihan</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 2: QUIZ WORKSPACE                                                    -->
+    <!-- ========================================================================= -->
+    <section id="view-quiz" class="hidden flex-col flex-grow space-y-5">
+      
+      <!-- Top Question Navigation (Allows jumping to any question non-sequentially) -->
+      <div class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200 shadow-sm">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
+          <div>
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500">Navigasi Nomor Soal</h3>
+            <p class="text-xs text-slate-400">Pilih nomor soal untuk mengerjakannya dalam urutan bebas</p>
+          </div>
+          <div class="flex items-center space-x-4 text-xs font-medium">
+            <span class="inline-flex items-center text-slate-600">
+              <span class="w-3 h-3 rounded-md bg-slate-100 border border-slate-300 mr-1.5"></span> Belum
+            </span>
+            <span class="inline-flex items-center text-emerald-700">
+              <span class="w-3 h-3 rounded-md bg-emerald-500 mr-1.5"></span> Terkunci (Benar)
+            </span>
+            <span class="inline-flex items-center text-rose-700">
+              <span class="w-3 h-3 rounded-md bg-rose-500 mr-1.5"></span> Terkunci (Salah)
+            </span>
+          </div>
+        </div>
+
+        <div id="question-navigator" class="grid grid-cols-5 sm:grid-cols-10 gap-2 sm:gap-2.5 pt-3">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 flex-grow">
+        
+        <!-- LEFT COLUMN: Reading Passages (With Quick Switcher Tabs) -->
+        <div class="lg:col-span-6 flex flex-col">
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm flex flex-col h-full overflow-hidden">
+            <!-- Passage Tabs Header -->
+            <div class="bg-slate-50 border-b border-slate-200 px-4 py-3 flex items-center justify-between">
+              <div class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+                <span class="text-xs font-bold text-slate-700 uppercase tracking-wider">Teks Bacaan (Reading Passage)</span>
+              </div>
+              <!-- Tab Switchers -->
+              <div class="flex rounded-lg bg-slate-200/80 p-0.5 text-xs font-semibold" id="text-tab-group">
+                <button onclick="switchPassageTab(1)" id="tab-btn-1" class="px-2.5 py-1 rounded-md transition-all duration-150">Teks 1</button>
+                <button onclick="switchPassageTab(2)" id="tab-btn-2" class="px-2.5 py-1 rounded-md transition-all duration-150">Teks 2</button>
+                <button onclick="switchPassageTab(3)" id="tab-btn-3" class="px-2.5 py-1 rounded-md transition-all duration-150">Teks 3</button>
+              </div>
+            </div>
+
+            <div id="passage-container" class="p-5 sm:p-6 overflow-y-auto max-h-[600px] custom-scrollbar text-slate-700 leading-relaxed space-y-4">
+              <!-- Content rendered dynamically via switchPassageTab -->
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Active Question Display -->
+        <div class="lg:col-span-6 flex flex-col">
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 sm:p-6 flex flex-col h-full justify-between">
+            
+            <div class="space-y-4">
+              <!-- Question Header Meta -->
+              <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                <div class="flex items-center space-x-2">
+                  <span id="current-question-badge" class="px-3 py-1 rounded-lg bg-blue-50 text-blue-700 font-bold text-sm">
+                    Soal 1
+                  </span>
+                  <span id="current-skill-badge" class="text-xs text-slate-500 font-medium">
+                    Evaluating Fact vs. Opinion
+                  </span>
+                </div>
+                <span id="question-lock-status" class="text-xs font-semibold text-slate-400">
+                  Belum dijawab
+                </span>
+              </div>
+
+              <!-- Question Prompt -->
+              <div id="question-prompt" class="text-slate-900 font-medium text-base sm:text-lg leading-relaxed">
+                <!-- Question text inserted dynamically -->
+              </div>
+
+              <!-- Options / Interaction Body -->
+              <div id="options-container" class="space-y-3 pt-2">
+                <!-- Interactive options populated dynamically -->
+              </div>
+
+              <!-- Single Click Rule Reminder / Warning Notice -->
+              <div id="answer-notification" class="hidden rounded-xl p-3.5 text-xs font-medium leading-relaxed transition-all">
+                <!-- Feedback message (No correct key or explanation shown) -->
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between gap-3">
+              <button id="btn-prev" onclick="navigateQuestion(-1)" class="px-4 py-2.5 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50 font-semibold text-sm transition-all flex items-center space-x-1.5 disabled:opacity-40 disabled:pointer-events-none">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                <span>Sebelumnya</span>
+              </button>
+
+              <div class="text-xs font-semibold text-slate-500">
+                <span id="answered-counter">0</span> / 10 Terjawab
+              </div>
+
+              <div class="flex items-center space-x-2">
+                <button id="btn-next" onclick="navigateQuestion(1)" class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm transition-all flex items-center space-x-1.5">
+                  <span>Selanjutnya</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+                <button id="btn-finish" onclick="confirmFinishQuiz()" class="hidden px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm transition-all items-center space-x-1.5 shadow-sm">
+                  <span>Selesai & Analisis</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 3: CLOSING & DIAGNOSTIC REPORT                                       -->
+    <!-- ========================================================================= -->
+    <section id="view-result" class="hidden flex-col space-y-8 my-auto py-6">
+      
+      <!-- Top Score Hero Banner -->
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-xl shadow-slate-200/50 overflow-hidden">
+        <div class="bg-gradient-to-r from-blue-700 via-indigo-700 to-sky-600 px-6 py-8 sm:px-10 sm:py-10 text-white text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div class="space-y-2">
+            <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-xs rounded-full text-xs font-semibold tracking-wider uppercase">
+              Hasil Latihan Selesai
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
+              Laporan Evaluasi TKA 2026
+            </h2>
+            <p class="text-blue-100 text-sm max-w-lg">
+              Berikut adalah rekapitulasi performa dan analisis diagnostik kemampuan akademik Bahasa Inggris kamu.
+            </p>
+          </div>
+          
+          <!-- Score Bubble -->
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 text-center min-w-[160px]">
+            <div class="text-xs uppercase tracking-wider text-blue-100 font-semibold mb-1">Skor Akhir</div>
+            <div id="final-score-display" class="text-5xl font-black text-white tracking-tight">
+              0
+            </div>
+            <div class="text-[11px] text-blue-200 mt-1">Skala Maksimal 100</div>
+          </div>
+        </div>
+
+        <!-- Student Identity Summary Bar on Result Page -->
+        <div class="bg-blue-50/60 border-b border-slate-200 px-6 py-3.5 sm:px-10 flex flex-wrap items-center justify-between gap-4 text-xs">
+          <div class="flex items-center space-x-2">
+            <span class="font-bold text-slate-500 uppercase tracking-wider">Nama Siswa:</span>
+            <span id="report-student-name" class="font-extrabold text-slate-900 text-sm"></span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="font-bold text-slate-500 uppercase tracking-wider">Kelas:</span>
+            <span id="report-student-class" class="font-extrabold text-blue-700 bg-white px-2.5 py-1 rounded-md border border-blue-200 shadow-2xs"></span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="font-bold text-slate-500 uppercase tracking-wider">Sisa Waktu:</span>
+            <span id="report-student-time" class="font-extrabold text-slate-900 font-mono bg-white px-2.5 py-1 rounded-md border border-slate-200 shadow-2xs"></span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="font-bold text-slate-500 uppercase tracking-wider">Lembaga:</span>
+            <span class="font-semibold text-slate-700">BAC Bogor Permata</span>
+          </div>
+        </div>
+
+        <!-- Quick Summary Numbers -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-slate-100 border-b border-slate-100 bg-slate-50/50 text-center">
+          <div class="p-4 sm:p-5">
+            <div class="text-xs text-slate-500 font-medium">Total Soal</div>
+            <div class="text-xl font-bold text-slate-800 mt-0.5">10</div>
+          </div>
+          <div class="p-4 sm:p-5">
+            <div class="text-xs text-emerald-600 font-semibold">Jawaban Benar</div>
+            <div id="final-correct-display" class="text-xl font-bold text-emerald-600 mt-0.5">0</div>
+          </div>
+          <div class="p-4 sm:p-5">
+            <div class="text-xs text-rose-600 font-semibold">Jawaban Salah</div>
+            <div id="final-wrong-display" class="text-xl font-bold text-rose-600 mt-0.5">0</div>
+          </div>
+          <div class="p-4 sm:p-5">
+            <div class="text-xs text-blue-600 font-semibold">Akurasi</div>
+            <div id="final-accuracy-display" class="text-xl font-bold text-blue-700 mt-0.5">0%</div>
+          </div>
+        </div>
+
+        <div class="p-6 sm:p-10 space-y-8">
+          
+          <!-- Section Heading -->
+          <div>
+            <h3 class="text-xl font-extrabold text-slate-900 tracking-tight flex items-center space-x-2">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+              <span>Analisis Diagnostik Sub-Skill & Topik</span>
+            </h3>
+            <p class="text-sm text-slate-500 mt-1">
+              Gunakan analisis ini sebagai panduan utama ketika berkonsultasi dengan Guru/Master Teacher Brain Academy Bogor Permata.
+            </p>
+          </div>
+
+          <!-- Subskills Evaluation Grid -->
+          <div id="diagnostic-skills-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Rendered by JavaScript -->
+          </div>
+
+          <!-- Specific Consultation Advice Card -->
+          <div class="bg-amber-50/80 rounded-2xl p-6 border border-amber-200 space-y-3">
+            <div class="flex items-center space-x-2 text-amber-900 font-bold">
+              <svg class="w-5 h-5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+              </svg>
+              <h4>Rekomendasi Konsultasi Master Teacher BAC Bogor Permata</h4>
+            </div>
+            <div id="consultation-guidance" class="text-sm text-amber-950 leading-relaxed space-y-2">
+              <!-- Personalized advice loaded dynamically -->
+            </div>
+          </div>
+
+          <!-- Matrix of Questions Attempted -->
+          <div class="space-y-3">
+            <h4 class="font-bold text-slate-800 text-sm">Status Pengerjaan Seluruh Soal (1 - 10)</h4>
+            <div id="question-result-summary" class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+              <!-- Result cards rendered by JS -->
+            </div>
+            <p class="text-xs text-slate-400 italic">
+              *Catatan: Sesuai aturan latihan, kunci jawaban lengkap dan pembahasan mendalam akan dibahas bersama Master Teacher setelah periode 20 September 2026.
+            </p>
+          </div>
+
+          <!-- Bottom Actions -->
+          <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+              <span id="cloud-sync-status" class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-200">
+                <svg class="w-3.5 h-3.5 mr-1.5 animate-spin text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+                Menyinkronkan ke Spreadsheet TKA ENG3...
+              </span>
+              <div id="single-attempt-tag" class="hidden text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">
+                Sesi Pengerjaan 1x Selesai
+              </div>
+            </div>
+            <div class="flex items-center space-x-3 w-full sm:w-auto">
+              <button id="btn-retake" onclick="resetAndRetake()" class="hidden w-full sm:w-auto px-6 py-3 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-semibold text-sm transition-all items-center justify-center space-x-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+                <span>Ulangi Latihan</span>
+              </button>
+              <button onclick="window.print()" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm transition-all shadow-sm flex items-center justify-center space-x-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                </svg>
+                <span>Cetak Hasil / Simpan PDF</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Requirement -->
+  <footer class="bg-white border-t border-slate-200 py-4 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <p class="text-[9pt] text-slate-500 font-normal">
+        Copyright © 2026 Brain Academy Bogor Permata. All rights reserved.
+      </p>
+      <div class="text-[9pt] text-slate-400">
+        Simulasi TKA 2026 • Tim Akademik BA Bogor Permata
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast Container (Non-blocking replacement for alert) -->
+  <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col space-y-2 pointer-events-none"></div>
+
+  <script>
+    /* 
+      Academic texts directly transcribed from provided PDF document
+      TKA Bahasa Inggris - Evaluation and Appreciation
+    */
+    const PASSAGES = {
+      1: {
+        title: "Part 1: Generative AI and Digital Art",
+        subtitle: "Text 1: The Canvas of Algorithms",
+        paragraphs: [
+          `<strong>Paragraph 1</strong> The rapid proliferation of generative artificial intelligence models has fundamentally disrupted traditional artistic mediums. By analyzing millions of digitized paintings, photographs, and illustrations, deep-learning algorithms can synthesize high-resolution visual artwork from simple text prompts in a matter of seconds. Advocates for algorithmic art claim that this technological breakthrough represents the ultimate democratization of creative expression. In their view, software eliminates technical barriers such as brushwork mechanics or color theory mastery, allowing anyone with an imagination to manifest complex visual ideas. Industry statistics show that digital platforms hosted over two billion AI-generated images in 2025 alone, demonstrating an unprecedented volume of creative output across global networks.`,
+          `<strong>Paragraph 2</strong> However, this sudden abundance has sparked intense ethical and aesthetic debates within the cultural sector. A landmark controversy occurred at a national digital arts exhibition when an entry generated by a latent diffusion model won first place in the digital photography category. Critics argued that the submission was not genuine artistic expression, but rather a sophisticated statistical compilation derived from copyrighted works of human artists without consent or compensation. Proponents countered that human artists similarly learn by observing existing masterpieces, asserting that machine learning merely accelerates cognitive synthesis. Nevertheless, prominent gallery curators remain skeptical, questioning whether software capable of replicating visual textures can ever truly possess artistic intent or genuine creative agency.`
+        ]
+      },
+      2: {
+        title: "Part 2: Atmospheric Geoengineering",
+        subtitle: "Text 2: Engineering the Thermostat",
+        paragraphs: [
+          `<strong>Paragraph 1</strong> As anthropogenic climate change accelerates global temperature increases, several atmospheric scientists propose solar radiation management (SRM) through stratospheric aerosol injection as a viable emergency intervention. This technique involves dispersing microscopic sulfur dioxide particles into the stratosphere to mimic the cooling effect of major volcanic eruptions by reflecting a fraction of incoming solar radiation back into space. High-resolution computer simulations project that continuous aerosol deployment could reduce global average temperatures by up to 0.5 degrees Celsius within two years. Proponents argue that SRM offers a cost-effective and immediate mechanism to prevent catastrophic ice sheet collapse while global economies transition away from fossil fuels.`,
+          `<strong>Paragraph 2</strong> Despite these computational projections, environmental ethicists and climatologists warn that geoengineering carries profound systemic risks and logical fallacies. Manipulating solar absorption does not remove greenhouse gases from the atmosphere, leaving severe secondary crises like ocean acidification entirely unaddressed. Furthermore, atmospheric modeling indicates that artificial aerosol veils could disrupt regional monsoon systems, jeopardizing agricultural water supplies for billions of people in equatorial regions. Crucially, ethicists highlight a major moral hazard: framing solar geoengineering as a cheap quick-fix threatens to diminish political resolve to enforce deep carbon emission cuts, trading long-term planetary stewardship for an unpredictable technological bandage.`
+        ]
+      },
+      3: {
+        title: "Part 3: Virtual Preservation of Cultural Heritage",
+        subtitle: "Text 3: Shadows of the Past in Digital Solitude",
+        paragraphs: [
+          `<strong>Paragraph 1</strong> In response to severe environmental weathering, urban encroachment, and mass tourism, heritage conservationists are turning to virtual reality (VR) and high-density Light Detection and Ranging (LiDAR) technology. By recording ancient monuments at millimeter-level spatial precision, digital archiving projects create immersive 3D virtual environments where users can explore fragile archaeological sites such as subterranean tombs or ancient stone temples—without causing physical wear. Proponents emphasize that VR preservation democratizes global access to heritage sites while completely eliminating the mechanical deterioration, littering, and foot traffic damage caused by millions of annual visitors.`,
+          `<strong>Paragraph 2</strong> Nevertheless, cultural anthropologists and philosophers raise significant concerns regarding the aesthetic and human limitations of virtual tourism. While LiDAR models accurately replicate visual surfaces and geometry, digital immersion inherently lacks the profound historical gravity, tactile micro-climates, and authentic atmosphere of being physically present at a sacred or ancient site. Furthermore, shifting tourism entirely to virtual domains threatens the economic livelihoods of indigenous and local communities who rely on heritage visitors. Treating a high-definition digital rendering as an absolute substitute for tangible historical reality reduces living human heritage to mere visual consumption, detaching art and architecture from their physical, social, and spiritual contexts.`
+        ]
+      }
+    };
+
+    const QUESTIONS = [
+      {
+        id: 1,
+        passageId: 1,
+        subskill: "Evaluating Fact vs. Opinion (Identifying verifiable empirical data)",
+        category: "Fact & Reality Verification",
+        type: "mcq",
+        prompt: "Which statement from Paragraph 1 of Text 1 represents an objective fact supported by verifiable empirical data, rather than a subjective opinion or value judgment?",
+        options: [
+          { key: "A", text: "Generative artificial intelligence represents the ultimate democratization of creative expression." },
+          { key: "B", text: "Software eliminates technical barriers, allowing anyone to manifest complex visual ideas effortlessly." },
+          { key: "C", text: "Digital platforms hosted over two billion AI-generated images in 2025 alone." },
+          { key: "D", text: "Deep-learning algorithms produce visual outputs that are aesthetically superior to traditional paintings." },
+          { key: "E", text: "Manifesting visual ideas through text prompts is more fulfilling than mastering brushwork mechanics." }
+        ],
+        correctKey: "C"
+      },
+      {
+        id: 2,
+        passageId: 1,
+        subskill: "Evaluating Reality vs. Fantasy (Distinguishing real AI capabilities from fantasy)",
+        category: "Fact & Reality Verification",
+        type: "mcq",
+        prompt: "In evaluating the claims about generative AI in Text 1, which scenario reflects a feasible real-world capability of current technology rather than an exaggerated claim or fantasy?",
+        options: [
+          { key: "A", text: "Algorithms possessing subjective emotional consciousness while generating digital paintings." },
+          { key: "B", text: "Deep-learning models synthesizing visual patterns from vast datasets of existing digital images." },
+          { key: "C", text: "Software autonomously experiencing personal grief and translating it into visual symbolism." },
+          { key: "D", text: "AI systems generating complex artwork without requiring underlying training data or computational hardware." },
+          { key: "E", text: "Digital platforms guaranteeing that synthesized art possesses intrinsic moral agency and spiritual depth." }
+        ],
+        correctKey: "B"
+      },
+      {
+        id: 3,
+        passageId: 1,
+        subskill: "Evaluating Textual Appropriateness (Selecting excerpt depicting core controversy)",
+        category: "Textual Evidence & Appropriateness",
+        type: "mcq",
+        prompt: "Which excerpt from Text 1 is most appropriate for depicting the core controversy surrounding algorithmic artwork?",
+        options: [
+          { key: "A", text: `"Advocates for algorithmic art claim that this technological breakthrough represents the ultimate democratization..."` },
+          { key: "B", text: `"Critics argued that the submission was not genuine artistic expression, but rather a statistical compilation derived from copyrighted works..."` },
+          { key: "C", text: `"Industry statistics show that digital platforms hosted over two billion AI-generated images..."` },
+          { key: "D", text: `"By analyzing millions of digitized paintings... deep-learning algorithms can synthesize high-resolution artwork..."` },
+          { key: "E", text: `"Software eliminates technical barriers such as brushwork mechanics or color theory mastery..."` }
+        ],
+        correctKey: "B"
+      },
+      {
+        id: 4,
+        passageId: 2,
+        subskill: "Evaluating Fact vs. Opinion (Table classification of statements)",
+        category: "Fact & Reality Verification",
+        type: "table_fact_opinion",
+        prompt: "Evaluate whether each statement below represents an objective factual claim or a subjective authorial opinion based on Text 2. Place a checkmark in the Fact or Opinion column.",
+        rows: [
+          { id: "r1", text: "1. Stratospheric aerosol injection involves dispersing microscopic sulfur dioxide particles into the upper atmosphere.", correct: "Fact" },
+          { id: "r2", text: "2. Framing solar geoengineering as a cheap quick-fix is a dangerous moral hazard that will inevitably ruin planetary stewardship.", correct: "Opinion" },
+          { id: "r3", text: "3. Computer climate simulations project a potential global average temperature reduction of up to $0.5^\\circ\\text{C}$ within two years.", correct: "Fact" }
+        ]
+      },
+      {
+        id: 5,
+        passageId: 2,
+        subskill: "Evaluating Sufficiency & Validity (Identifying logical gaps/risks in claims)",
+        category: "Validity & Logical Consistency",
+        type: "multi_select",
+        instruction: "(Select ALL that apply)",
+        prompt: `Critical climatologists argue that proponents' claim of solar geoengineering as a "safe, quick climate solution" lacks sufficient validity. Which arguments in Text 2 evaluate logical flaws or risks in this claim?`,
+        options: [
+          { key: "A", text: "Reflecting solar radiation fails to eliminate atmospheric carbon dioxide, leaving ocean acidification unaddressed." },
+          { key: "B", text: "Stratospheric aerosol injection instantly eliminates all existing greenhouse gases from the lower atmosphere." },
+          { key: "C", text: "Artificial aerosol veils could severely disrupt regional monsoon patterns and agricultural water supplies." },
+          { key: "D", text: "All atmospheric scientists agree that geoengineering is cheaper than reducing fossil fuel consumption." },
+          { key: "E", text: "Relying on geoengineering creates a moral hazard that weakens political motivation to enforce emission cuts." }
+        ],
+        correctKeys: ["A", "C", "E"]
+      },
+      {
+        id: 6,
+        passageId: 2,
+        subskill: "Responding to Text Content (Identifying authorial tone and critical attitude)",
+        category: "Authorial Tone & Perspective",
+        type: "mcq",
+        prompt: "How does the author of Text 2 frame their emotional and critical attitude toward the unbridled deployment of stratospheric geoengineering?",
+        options: [
+          { key: "A", text: "Cautious and skeptical, highlighting systemic ecological risks, unaddressed crises, and ethical hazards." },
+          { key: "B", text: "Enthusiastic and optimistic, celebrating aerosol injection as the absolute solution to fossil fuel pollution." },
+          { key: "C", text: "Indifferent and detached, focusing exclusively on chemical formulas without evaluating environmental outcomes." },
+          { key: "D", text: "Hostile and aggressive, demanding an immediate international military ban on atmospheric physics research." },
+          { key: "E", text: "Overjoyed that global economies can increase fossil fuel consumption without experiencing warming effects." }
+        ],
+        correctKey: "A"
+      },
+      {
+        id: 7,
+        passageId: 3,
+        subskill: "Evaluating Textual Appropriateness (Selecting excerpts depicting VR limitations)",
+        category: "Textual Evidence & Appropriateness",
+        type: "multi_select",
+        instruction: "(Select TWO choices)",
+        prompt: "Which TWO excerpts from Text 3 are most effective in depicting the limitations of virtual reality in replacing physical cultural heritage visits?",
+        options: [
+          { key: "A", text: `"...digital immersion inherently lacks the profound historical gravity, tactile micro-climates, and authentic atmosphere..."` },
+          { key: "B", text: `"By recording ancient monuments at millimeter-level spatial precision, digital archiving projects create immersive 3D virtual environments..."` },
+          { key: "C", text: `"...shifting tourism entirely to virtual domains threatens the economic livelihoods of indigenous and local communities..."` },
+          { key: "D", text: `"...VR preservation democratizes global access to heritage sites while completely eliminating mechanical deterioration..."` },
+          { key: "E", text: `"Proponents emphasize that VR preservation democratizes global access to heritage sites..."` }
+        ],
+        correctKeys: ["A", "C"],
+        maxSelections: 2
+      },
+      {
+        id: 8,
+        passageId: 3,
+        subskill: "Evaluating Validity of Claims (Table evaluation of virtual tourism claims)",
+        category: "Validity & Logical Consistency",
+        type: "table_true_false",
+        prompt: "Synthesizing arguments from Text 3, evaluate the validity and logical consistency of each conclusion regarding virtual tourism. Place a checkmark in the True or False column.",
+        rows: [
+          { id: "r1", text: "1. High-density LiDAR scanning provides an effective method for archiving fragile archaeological sites against physical degradation.", correct: "True" },
+          { id: "r2", text: "2. Text 3 proves that high-definition 3D digital renderings render physical archaeological conservation completely redundant.", correct: "False" },
+          { id: "r3", text: "3. Replacing physical visits entirely with virtual tourism risks detaching historical architecture from its living human and community context.", correct: "True" }
+        ]
+      },
+      {
+        id: 9,
+        passageId: 3,
+        subskill: "Personal Aesthetic Reaction (Evaluating critical heritage appreciation)",
+        category: "Authorial Tone & Perspective",
+        type: "multi_select",
+        instruction: "(Select ALL that apply)",
+        prompt: "Based on the aesthetic and cultural philosophy presented in Text 3, how would a thoughtful reader who values authentic historical heritage react to VR site replicas?",
+        options: [
+          { key: "A", text: "Appreciating VR as an indispensable diagnostic and archiving tool against natural disasters and physical wear." },
+          { key: "B", text: "Experiencing a sense of emotional incompleteness, recognizing that digital pixels cannot recreate physical atmosphere." },
+          { key: "C", text: "Demanding the immediate demolition of physical ancient ruins to force all global tourists into VR environments." },
+          { key: "D", text: "Recognizing that complete heritage appreciation requires acknowledging both the tangible site and local community life." },
+          { key: "E", text: "Believing that synthetic visual graphics possess greater spiritual value than authentic ancient stone carvings." }
+        ],
+        correctKeys: ["A", "B", "D"]
+      },
+      {
+        id: 10,
+        passageId: 3,
+        subskill: "Overarching Evaluative Synthesis (Synthesizing holistic judgment across all texts)",
+        category: "Validity & Logical Consistency",
+        type: "mcq",
+        prompt: "After evaluating the arguments across Text 1, Text 2, and Text 3, which conclusion provides the most balanced and valid judgment regarding technology's role in human culture and environment?",
+        options: [
+          { key: "A", text: "Advanced digital tools offer powerful diagnostic and preservation utilities, but they cannot fully substitute for organic human creativity, authentic real-world experience, or fundamental environmental stewardship." },
+          { key: "B", text: "Algorithmic simulations and virtual environments should completely replace physical art, natural ecosystems, and international travel in modern society." },
+          { key: "C", text: "Technological innovation is inherently harmful and should be strictly prohibited across all artistic, environmental, and historical domains." },
+          { key: "D", text: "High computational speed and high-resolution rendering are the sole metrics for determining the aesthetic and moral value of human culture." },
+          { key: "E", text: "Human effort is rendered completely obsolete whenever digital software demonstrates the ability to analyze visual or physical data patterns." }
+        ],
+        correctKey: "A"
+      }
+    ];
+
+    let currentQuestionIndex = 0;
+    let activePassageId = 1;
+    
+    // User answer state:
+    // { isLocked: boolean, isCorrect: boolean, selected: any }
+    const userAnswers = {};
+
+    // Student Identity state
+    let studentData = {
+      name: '',
+      class: ''
+    };
+
+    // Google Apps Script Web App Deployment URL (Hubungkan hasil pengerjaan langsung ke tab "TKA ENG3")
+    // Ganti URL berikut dengan Web App URL hasil Deploy Google Apps Script Anda
+    const GOOGLE_SCRIPT_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwKGmZhk2C-Fn2_BaetjwQGzG457wiim--KUJ-OuTQNc8tNURtmfYJHXrtJ_MIeQGXK/exec";
+
+    // Konfigurasi Timer (15 menit = 900 detik)
+    const TOTAL_EXAM_SECONDS = 15 * 60;
+    let remainingSeconds = TOTAL_EXAM_SECONDS;
+    let timerInterval = null;
+
+    // Konfigurasi Periode Akses Ujian (Dapat diedit melalui code saja)
+    // Diatur untuk periode 11 September 2026 12:00 WIB s.d. 20 September 2026 23:59 WIB
+    const EXAM_SCHEDULE = {
+      enforceDeadline: false, // Ubah ke true jika ingin mengaktifkan penguncian tanggal ketat
+      startDate: "2026-09-11T12:00:00+07:00",
+      endDate: "2026-09-20T23:59:59+07:00"
+    };
+
+    let isExamCompleted = false;
+    let examFinishedTimeFormatted = "-";
+
+    // Fallback penyimpanan memori jika IndexedDB dibatasi lingkungan iframe sandbox
+    const memoryStorage = {};
+
+    // Database IndexedDB untuk Autosave & Enforce 1x Pengerjaan (Aman tanpa localStorage)
+    const IDB_CONFIG = {
+      dbName: "TKA_2026_BogorPermata_DB",
+      version: 1,
+      storeName: "exam_state"
+    };
+
+    function openExamDB() {
+      return new Promise((resolve, reject) => {
+        try {
+          if (!window.indexedDB) {
+            return reject(new Error("IndexedDB tidak didukung"));
+          }
+          const req = indexedDB.open(IDB_CONFIG.dbName, IDB_CONFIG.version);
+          req.onupgradeneeded = (e) => {
+            const db = e.target.result;
+            if (!db.objectStoreNames.contains(IDB_CONFIG.storeName)) {
+              db.createObjectStore(IDB_CONFIG.storeName, { keyPath: "id" });
+            }
+          };
+          // Mengambil result dari event target (e.target.result) atau request (req.result)
+          req.onsuccess = (e) => resolve(e.target ? e.target.result : req.result);
+          req.onerror = () => reject(req.error);
+        } catch (err) {
+          reject(err);
+        }
+      });
+    }
+
+    async function saveStateToDB(key, val) {
+      try {
+        const db = await openExamDB();
+        const tx = db.transaction(IDB_CONFIG.storeName, "readwrite");
+        tx.objectStore(IDB_CONFIG.storeName).put({ id: key, data: val });
+      } catch (e) {
+        // Fallback ke penyimpanan memori jika browser/iframe memblokir penyimpanan lokal
+        memoryStorage[key] = val;
+      }
+    }
+
+    async function getStateFromDB(key) {
+      try {
+        const db = await openExamDB();
+        return new Promise((resolve) => {
+          const tx = db.transaction(IDB_CONFIG.storeName, "readonly");
+          const req = tx.objectStore(IDB_CONFIG.storeName).get(key);
+          req.onsuccess = (e) => {
+            const result = e.target ? e.target.result : req.result;
+            resolve(result ? result.data : (memoryStorage[key] || null));
+          };
+          req.onerror = () => resolve(memoryStorage[key] || null);
+        });
+      } catch (e) {
+        return memoryStorage[key] || null;
+      }
+    }
+
+    async function persistFullSession() {
+      const payload = {
+        studentData,
+        currentQuestionIndex,
+        userAnswers,
+        remainingSeconds,
+        isExamCompleted,
+        examFinishedTimeFormatted
+      };
+      await saveStateToDB("session", payload);
+    }
+
+    window.addEventListener('DOMContentLoaded', async () => {
+      buildNavigator();
+      switchPassageTab(1);
+
+      // 1. Cek Batasan Deadline Pengerjaan
+      const deadlineCheck = checkExamDeadline();
+      if (!deadlineCheck.allowed) {
+        applyDeadlineLock(deadlineCheck.message, deadlineCheck.type);
+        return;
+      }
+
+      // 2. Cek apakah siswa sudah pernah mengerjakan hingga selesai (Aturan 1 Kali Pengerjaan)
+      const savedSession = await getStateFromDB("session");
+      if (savedSession && savedSession.isExamCompleted) {
+        applyCompletedState(savedSession);
+        return;
+      }
+
+      // 3. Fitur Autosave: Pulihkan pengerjaan terakhir jika terputus/refresh saat sedang mengerjakan
+      if (savedSession && savedSession.studentData && savedSession.studentData.name) {
+        resumePreviousSession(savedSession);
+      }
+    });
+
+    function checkExamDeadline() {
+      if (!EXAM_SCHEDULE.enforceDeadline) return { allowed: true };
+
+      const now = new Date().getTime();
+      const start = new Date(EXAM_SCHEDULE.startDate).getTime();
+      const end = new Date(EXAM_SCHEDULE.endDate).getTime();
+
+      if (now < start) {
+        return {
+          allowed: false,
+          type: "pending",
+          message: "Latihan belum dibuka. Sesuai jadwal, latihan akan terbuka untuk dikerjakan mulai tanggal <strong>14 September 2026</strong>."
+        };
+      }
+
+      if (now > end) {
+        return {
+          allowed: false,
+          type: "closed",
+          message: "Periode pengerjaan latihan telah ditutup pada tanggal <strong>20 September 2026</strong>. Terima kasih atas partisipasinya!"
+        };
+      }
+
+      return { allowed: true };
+    }
+
+    function applyDeadlineLock(message, type) {
+      const notice = document.getElementById('deadline-status-notice');
+      const startBtn = document.getElementById('btn-start');
+      const formSection = document.getElementById('student-form-section');
+
+      if (notice) {
+        notice.classList.remove('hidden');
+        notice.className = `rounded-xl p-4 border text-sm font-medium leading-relaxed ${
+          type === 'closed' ? 'bg-rose-50 border-rose-200 text-rose-800' : 'bg-amber-50 border-amber-200 text-amber-800'
+        }`;
+        notice.innerHTML = `
+          <div class="flex items-center space-x-2 font-bold mb-1">
+            <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+            </svg>
+            <span>Informasi Periode Pengerjaan</span>
+          </div>
+          <p>${message}</p>
+        `;
+      }
+
+      if (startBtn) {
+        startBtn.disabled = true;
+        startBtn.className = "w-full sm:w-auto px-8 py-3.5 bg-slate-300 text-slate-500 font-semibold rounded-xl cursor-not-allowed flex items-center justify-center space-x-2";
+      }
+
+      if (formSection) {
+        formSection.classList.add('opacity-60', 'pointer-events-none');
+      }
+    }
+
+    function applyCompletedState(session) {
+      // Memulihkan data hasil untuk ditampilkan langsung tanpa pembahasan (Aturan 1 Kali Pengerjaan)
+      studentData = session.studentData || { name: '-', class: '-' };
+      for (const k in session.userAnswers) {
+        userAnswers[k] = session.userAnswers[k];
+      }
+      isExamCompleted = true;
+      examFinishedTimeFormatted = session.examFinishedTimeFormatted || "-";
+
+      document.getElementById('view-welcome').classList.add('hidden');
+      document.getElementById('view-quiz').classList.add('hidden');
+      document.getElementById('view-result').classList.remove('hidden');
+      document.getElementById('view-result').classList.add('flex');
+
+      // Sembunyikan tombol Ulangi Latihan untuk menjaga integritas 1x pengerjaan
+      document.getElementById('btn-retake').classList.add('hidden');
+      document.getElementById('single-attempt-tag').classList.remove('hidden');
+
+      const cloudBadge = document.getElementById('cloud-sync-status');
+      cloudBadge.className = "inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200";
+      cloudBadge.innerHTML = `
+        <svg class="w-3.5 h-3.5 mr-1.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        Tersimpan di Spreadsheet TKA ENG3
+      `;
+
+      computeAndRenderResults(false);
+      showToast("Kamu telah menyelesaikan latihan ini. Menampilkan laporan skor akhir.", "info");
+    }
+
+    function resumePreviousSession(session) {
+      studentData = session.studentData;
+      currentQuestionIndex = session.currentQuestionIndex || 0;
+      remainingSeconds = typeof session.remainingSeconds === 'number' ? session.remainingSeconds : TOTAL_EXAM_SECONDS;
+
+      for (const k in session.userAnswers) {
+        userAnswers[k] = session.userAnswers[k];
+      }
+
+      // Pulihkan input form
+      const nameInput = document.getElementById('input-student-name');
+      const classSelect = document.getElementById('select-student-class');
+      if (nameInput) nameInput.value = studentData.name;
+      if (classSelect) classSelect.value = studentData.class;
+
+      // Update badge header
+      const headerBadge = document.getElementById('header-student-badge');
+      const headerName = document.getElementById('header-student-name');
+      const headerClass = document.getElementById('header-student-class');
+      if (headerBadge && headerName && headerClass) {
+        headerName.textContent = studentData.name;
+        headerClass.textContent = studentData.class;
+        headerBadge.classList.remove('hidden');
+        headerBadge.classList.add('inline-flex');
+      }
+
+      // Buka langsung ke soal terakhir
+      document.getElementById('view-welcome').classList.add('hidden');
+      document.getElementById('view-quiz').classList.remove('hidden');
+      document.getElementById('view-quiz').classList.add('flex');
+
+      startTimer();
+      loadQuestion(currentQuestionIndex);
+      updateNavigatorPills();
+      showToast(`Sesi pengerjaan dipulihkan otomatis pada Soal ${currentQuestionIndex + 1}.`, "info");
+    }
+
+    function startTimer() {
+      const timerBadge = document.getElementById('header-timer-badge');
+      if (timerBadge) {
+        timerBadge.classList.remove('hidden');
+        timerBadge.classList.add('inline-flex');
+      }
+
+      updateTimerDisplay();
+
+      if (timerInterval) clearInterval(timerInterval);
+
+      timerInterval = setInterval(() => {
+        remainingSeconds--;
+        updateTimerDisplay();
+
+        // Autosave sisa waktu setiap 5 detik
+        if (remainingSeconds % 5 === 0) {
+          persistFullSession();
+        }
+
+        if (remainingSeconds <= 0) {
+          clearInterval(timerInterval);
+          remainingSeconds = 0;
+          updateTimerDisplay();
+          onTimerExpired();
+        }
+      }, 1000);
+    }
+
+    function updateTimerDisplay() {
+      const mins = Math.floor(remainingSeconds / 60);
+      const secs = remainingSeconds % 60;
+      const formatted = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+
+      const clock = document.getElementById('header-timer-clock');
+      const badge = document.getElementById('header-timer-badge');
+      if (clock) clock.textContent = formatted;
+
+      if (badge) {
+        if (remainingSeconds <= 120) { // Kurang dari 2 menit
+          badge.className = "inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-300 animate-pulse";
+          if (clock) clock.className = "font-mono font-black text-rose-800";
+        } else {
+          badge.className = "inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200";
+          if (clock) clock.className = "font-mono font-extrabold text-blue-800";
+        }
+      }
+    }
+
+    function onTimerExpired() {
+      showToast("Waktu pengerjaan 15 menit telah habis! Soal dikunci dan nilai dihitung otomatis.", "warning");
+      examFinishedTimeFormatted = "00:00";
+      finishQuiz();
+    }
+
+    function formatRemainingTimeForReport() {
+      if (examFinishedTimeFormatted && examFinishedTimeFormatted !== "-") {
+        return examFinishedTimeFormatted;
+      }
+      const validSeconds = Math.max(0, Math.floor(remainingSeconds));
+      const mins = Math.floor(validSeconds / 60);
+      const secs = validSeconds % 60;
+      return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }
+
+    function startQuiz() {
+      const nameInput = document.getElementById('input-student-name');
+      const classSelect = document.getElementById('select-student-class');
+
+      const name = nameInput ? nameInput.value.trim() : '';
+      const studentClass = classSelect ? classSelect.value : '';
+
+      if (!name) {
+        showToast("Mohon masukkan Nama Lengkap kamu terlebih dahulu!", "warning");
+        if (nameInput) nameInput.focus();
+        return;
+      }
+
+      if (!studentClass) {
+        showToast("Mohon pilih Kelas kamu (12 IPA 1, 12 IPA 2, atau 12 IPS 1)!", "warning");
+        if (classSelect) classSelect.focus();
+        return;
+      }
+
+      studentData.name = name;
+      studentData.class = studentClass;
+
+      // Update header student info badge
+      const headerBadge = document.getElementById('header-student-badge');
+      const headerName = document.getElementById('header-student-name');
+      const headerClass = document.getElementById('header-student-class');
+      if (headerBadge && headerName && headerClass) {
+        headerName.textContent = studentData.name;
+        headerClass.textContent = studentData.class;
+        headerBadge.classList.remove('hidden');
+        headerBadge.classList.add('inline-flex');
+      }
+
+      document.getElementById('view-welcome').classList.add('hidden');
+      document.getElementById('view-quiz').classList.remove('hidden');
+      document.getElementById('view-quiz').classList.add('flex');
+      currentQuestionIndex = 0;
+
+      // Jalankan Timer 15 Menit saat soal pertama muncul
+      startTimer();
+      loadQuestion(currentQuestionIndex);
+      persistFullSession();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function buildNavigator() {
+      const navContainer = document.getElementById('question-navigator');
+      navContainer.innerHTML = '';
+
+      QUESTIONS.forEach((q, idx) => {
+        const btn = document.createElement('button');
+        btn.id = `nav-pill-${idx}`;
+        btn.onclick = () => jumpToQuestion(idx);
+        btn.className = `py-2 rounded-xl text-xs font-bold transition-all flex flex-col items-center justify-center border ${getPillStyle(idx)}`;
+        btn.innerHTML = `<span>${q.id}</span>`;
+        navContainer.appendChild(btn);
+      });
+
+      updateAnsweredCounter();
+    }
+
+    function getPillStyle(idx) {
+      const ans = userAnswers[idx];
+      const isCurrent = idx === currentQuestionIndex;
+      const currentRing = isCurrent ? 'ring-2 ring-blue-500 ring-offset-1' : '';
+
+      if (!ans || !ans.isLocked) {
+        return isCurrent
+          ? `bg-blue-50 border-blue-400 text-blue-700 ${currentRing}`
+          : `bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100 ${currentRing}`;
+      }
+
+      if (ans.isCorrect) {
+        return `bg-emerald-500 border-emerald-600 text-white ${currentRing}`;
+      } else {
+        return `bg-rose-500 border-rose-600 text-white ${currentRing}`;
+      }
+    }
+
+    function updateNavigatorPills() {
+      QUESTIONS.forEach((_, idx) => {
+        const btn = document.getElementById(`nav-pill-${idx}`);
+        if (btn) {
+          btn.className = `py-2 rounded-xl text-xs font-bold transition-all flex flex-col items-center justify-center border ${getPillStyle(idx)}`;
+        }
+      });
+      updateAnsweredCounter();
+    }
+
+    function updateAnsweredCounter() {
+      let count = 0;
+      QUESTIONS.forEach((_, idx) => {
+        if (userAnswers[idx] && userAnswers[idx].isLocked) count++;
+      });
+      document.getElementById('answered-counter').textContent = count;
+      
+      const finishBtn = document.getElementById('btn-finish');
+      const nextBtn = document.getElementById('btn-next');
+      if (count === QUESTIONS.length || currentQuestionIndex === QUESTIONS.length - 1) {
+        finishBtn.classList.remove('hidden');
+        finishBtn.classList.add('inline-flex');
+      }
+    }
+
+    function switchPassageTab(passageId) {
+      activePassageId = passageId;
+      const p = PASSAGES[passageId];
+      if (!p) return;
+
+      [1, 2, 3].forEach(num => {
+        const tabBtn = document.getElementById(`tab-btn-${num}`);
+        if (num === passageId) {
+          tabBtn.className = 'px-3 py-1 rounded-md bg-white text-blue-700 font-bold shadow-xs';
+        } else {
+          tabBtn.className = 'px-3 py-1 rounded-md text-slate-600 hover:text-slate-900 font-medium';
+        }
+      });
+
+      const container = document.getElementById('passage-container');
+      container.innerHTML = `
+        <div class="border-b border-slate-100 pb-3">
+          <div class="text-xs font-bold uppercase tracking-wider text-blue-600">${p.title}</div>
+          <h4 class="text-base font-extrabold text-slate-900 mt-0.5">${p.subtitle}</h4>
+        </div>
+        ${p.paragraphs.map(para => `<p class="text-sm leading-relaxed">${para}</p>`).join('')}
+      `;
+    }
+
+    function loadQuestion(index) {
+      currentQuestionIndex = index;
+      const q = QUESTIONS[index];
+      if (!q) return;
+
+      // Auto-switch to relevant text passage
+      if (activePassageId !== q.passageId) {
+        switchPassageTab(q.passageId);
+      }
+
+      // Update Header Badges
+      document.getElementById('current-question-badge').textContent = `Soal ${q.id}`;
+      document.getElementById('current-skill-badge').textContent = q.subskill;
+
+      // Prompt
+      document.getElementById('question-prompt').innerHTML = q.prompt;
+
+      // Render Options Container based on question type
+      const container = document.getElementById('options-container');
+      container.innerHTML = '';
+      
+      const lockStatus = document.getElementById('question-lock-status');
+      const notif = document.getElementById('answer-notification');
+      notif.className = 'hidden';
+
+      const ans = userAnswers[index];
+
+      if (ans && ans.isLocked) {
+        lockStatus.textContent = "Jawaban Terkunci (1 Kali Klik)";
+        lockStatus.className = "text-xs font-semibold text-slate-500";
+      } else {
+        lockStatus.textContent = "Hanya bisa diklik 1 kali";
+        lockStatus.className = "text-xs font-semibold text-amber-600";
+      }
+
+      if (q.type === 'mcq') {
+        renderMCQ(q, container, ans);
+      } else if (q.type === 'table_fact_opinion') {
+        renderTableFactOpinion(q, container, ans);
+      } else if (q.type === 'multi_select') {
+        renderMultiSelect(q, container, ans);
+      } else if (q.type === 'table_true_false') {
+        renderTableTrueFalse(q, container, ans);
+      }
+
+      // Render Notification if already answered
+      if (ans && ans.isLocked) {
+        renderLockedFeedback(ans.isCorrect);
+      }
+
+      // Update Nav Buttons
+      document.getElementById('btn-prev').disabled = index === 0;
+      const nextBtn = document.getElementById('btn-next');
+      if (index === QUESTIONS.length - 1) {
+        nextBtn.classList.add('hidden');
+      } else {
+        nextBtn.classList.remove('hidden');
+      }
+
+      updateNavigatorPills();
+
+      // Trigger MathJax re-render for LaTeX formulas
+      if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise();
+      }
+    }
+
+    function renderMCQ(q, container, ans) {
+      q.options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.className = `w-full text-left p-4 rounded-xl border transition-all text-sm font-medium flex items-start space-x-3`;
+
+        const isLocked = ans && ans.isLocked;
+        const isUserSelection = ans && ans.selected === opt.key;
+
+        if (!isLocked) {
+          btn.className += ` border-slate-200 bg-white hover:bg-slate-50 hover:border-slate-300 text-slate-800 cursor-pointer shadow-2xs`;
+          btn.onclick = () => submitMCQ(q.id - 1, opt.key);
+        } else {
+          // STRICT RULE: Once clicked, only green (correct) or red (incorrect) is shown.
+          // No explanation and NO answer key for unticked choices is shown!
+          btn.disabled = true;
+          if (isUserSelection) {
+            if (ans.isCorrect) {
+              btn.className += ` bg-emerald-600 border-emerald-600 text-white font-semibold shadow-sm`;
+            } else {
+              btn.className += ` bg-rose-600 border-rose-600 text-white font-semibold shadow-sm`;
+            }
+          } else {
+            btn.className += ` bg-slate-50 border-slate-200 text-slate-400 opacity-60 cursor-not-allowed`;
+          }
+        }
+
+        const badgeStyle = isUserSelection && isLocked
+          ? (ans.isCorrect ? 'bg-white/20 text-white' : 'bg-white/20 text-white')
+          : 'bg-slate-100 text-slate-700';
+
+        btn.innerHTML = `
+          <span class="w-7 h-7 rounded-lg ${badgeStyle} flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">
+            ${opt.key}
+          </span>
+          <span class="leading-relaxed flex-grow">${opt.text}</span>
+          ${isUserSelection && isLocked ? `
+            <span class="text-xs font-bold uppercase tracking-wider ml-2">
+              ${ans.isCorrect ? '✓ Benar' : '✗ Salah'}
+            </span>
+          ` : ''}
+        `;
+
+        container.appendChild(btn);
+      });
+    }
+
+    function submitMCQ(index, selectedKey) {
+      if (userAnswers[index] && userAnswers[index].isLocked) return;
+
+      const q = QUESTIONS[index];
+      const isCorrect = selectedKey === q.correctKey;
+
+      userAnswers[index] = {
+        isLocked: true,
+        isCorrect: isCorrect,
+        selected: selectedKey
+      };
+
+      loadQuestion(index);
+      persistFullSession();
+      showToast(isCorrect ? "Jawaban dicatat!" : "Jawaban dicatat!", isCorrect ? "success" : "error");
+    }
+
+    function renderTableFactOpinion(q, container, ans) {
+      const isLocked = ans && ans.isLocked;
+      const tableWrapper = document.createElement('div');
+      tableWrapper.className = 'overflow-x-auto rounded-xl border border-slate-200';
+
+      let rowsHtml = '';
+      q.rows.forEach((row, rIdx) => {
+        const userChoice = ans && ans.selected ? ans.selected[row.id] : null;
+        
+        let rowStatusClass = '';
+        if (isLocked) {
+          const rowIsCorrect = userChoice === row.correct;
+          rowStatusClass = rowIsCorrect ? 'bg-emerald-50/50' : 'bg-rose-50/50';
+        }
+
+        rowsHtml += `
+          <tr class="border-b border-slate-200 ${rowStatusClass} transition-colors">
+            <td class="p-3 text-xs sm:text-sm text-slate-800 leading-relaxed font-medium">
+              ${row.text}
+            </td>
+            <td class="p-3 text-center w-24">
+              <label class="inline-flex items-center cursor-pointer">
+                <input type="radio" name="fo_${row.id}" value="Fact" 
+                  ${userChoice === 'Fact' ? 'checked' : ''} 
+                  ${isLocked ? 'disabled' : ''} 
+                  class="w-4 h-4 text-blue-600 focus:ring-blue-500">
+              </label>
+            </td>
+            <td class="p-3 text-center w-24">
+              <label class="inline-flex items-center cursor-pointer">
+                <input type="radio" name="fo_${row.id}" value="Opinion" 
+                  ${userChoice === 'Opinion' ? 'checked' : ''} 
+                  ${isLocked ? 'disabled' : ''} 
+                  class="w-4 h-4 text-blue-600 focus:ring-blue-500">
+              </label>
+            </td>
+          </tr>
+        `;
+      });
+
+      tableWrapper.innerHTML = `
+        <table class="w-full text-left text-sm">
+          <thead class="bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wider">
+            <tr>
+              <th class="p-3">Pernyataan (Statement)</th>
+              <th class="p-3 text-center w-24">Fact</th>
+              <th class="p-3 text-center w-24">Opinion</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200">
+            ${rowsHtml}
+          </tbody>
+        </table>
+      `;
+
+      container.appendChild(tableWrapper);
+
+      if (!isLocked) {
+        const lockBtn = document.createElement('button');
+        lockBtn.className = 'w-full mt-3 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm transition-all shadow-sm flex items-center justify-center space-x-2';
+        lockBtn.innerHTML = `
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+          <span>Kunci Jawaban Soal Ini (Hanya 1 Kali Klik)</span>
+        `;
+        lockBtn.onclick = () => submitTableQuestion(q.id - 1, 'fo_');
+        container.appendChild(lockBtn);
+      }
+    }
+
+    function renderTableTrueFalse(q, container, ans) {
+      const isLocked = ans && ans.isLocked;
+      const tableWrapper = document.createElement('div');
+      tableWrapper.className = 'overflow-x-auto rounded-xl border border-slate-200';
+
+      let rowsHtml = '';
+      q.rows.forEach((row, rIdx) => {
+        const userChoice = ans && ans.selected ? ans.selected[row.id] : null;
+        
+        let rowStatusClass = '';
+        if (isLocked) {
+          const rowIsCorrect = userChoice === row.correct;
+          rowStatusClass = rowIsCorrect ? 'bg-emerald-50/50' : 'bg-rose-50/50';
+        }
+
+        rowsHtml += `
+          <tr class="border-b border-slate-200 ${rowStatusClass} transition-colors">
+            <td class="p-3 text-xs sm:text-sm text-slate-800 leading-relaxed font-medium">
+              ${row.text}
+            </td>
+            <td class="p-3 text-center w-24">
+              <label class="inline-flex items-center cursor-pointer">
+                <input type="radio" name="tf_${row.id}" value="True" 
+                  ${userChoice === 'True' ? 'checked' : ''} 
+                  ${isLocked ? 'disabled' : ''} 
+                  class="w-4 h-4 text-blue-600 focus:ring-blue-500">
+              </label>
+            </td>
+            <td class="p-3 text-center w-24">
+              <label class="inline-flex items-center cursor-pointer">
+                <input type="radio" name="tf_${row.id}" value="False" 
+                  ${userChoice === 'False' ? 'checked' : ''} 
+                  ${isLocked ? 'disabled' : ''} 
+                  class="w-4 h-4 text-blue-600 focus:ring-blue-500">
+              </label>
+            </td>
+          </tr>
+        `;
+      });
+
+      tableWrapper.innerHTML = `
+        <table class="w-full text-left text-sm">
+          <thead class="bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wider">
+            <tr>
+              <th class="p-3">Pernyataan (Statement)</th>
+              <th class="p-3 text-center w-24">True</th>
+              <th class="p-3 text-center w-24">False</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200">
+            ${rowsHtml}
+          </tbody>
+        </table>
+      `;
+
+      container.appendChild(tableWrapper);
+
+      if (!isLocked) {
+        const lockBtn = document.createElement('button');
+        lockBtn.className = 'w-full mt-3 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm transition-all shadow-sm flex items-center justify-center space-x-2';
+        lockBtn.innerHTML = `
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+          <span>Kunci Jawaban Soal Ini (Hanya 1 Kali Klik)</span>
+        `;
+        lockBtn.onclick = () => submitTableQuestion(q.id - 1, 'tf_');
+        container.appendChild(lockBtn);
+      }
+    }
+
+    function submitTableQuestion(index, prefix) {
+      const q = QUESTIONS[index];
+      const selections = {};
+      let allFilled = true;
+
+      q.rows.forEach(r => {
+        const radios = document.getElementsByName(`${prefix}${r.id}`);
+        let checkedVal = null;
+        for (const radio of radios) {
+          if (radio.checked) {
+            checkedVal = radio.value;
+            break;
+          }
+        }
+        if (!checkedVal) {
+          allFilled = false;
+        } else {
+          selections[r.id] = checkedVal;
+        }
+      });
+
+      if (!allFilled) {
+        showToast("Mohon jawab seluruh baris pernyataan sebelum mengunci jawaban!", "warning");
+        return;
+      }
+
+      // Verify correctness across all rows
+      let allCorrect = true;
+      q.rows.forEach(r => {
+        if (selections[r.id] !== r.correct) {
+          allCorrect = false;
+        }
+      });
+
+      userAnswers[index] = {
+        isLocked: true,
+        isCorrect: allCorrect,
+        selected: selections
+      };
+
+      loadQuestion(index);
+      persistFullSession();
+      showToast(allCorrect ? "Jawaban tabel dicatat!" : "Jawaban tabel dicatat!", allCorrect ? "success" : "error");
+    }
+
+    function renderMultiSelect(q, container, ans) {
+      const isLocked = ans && ans.isLocked;
+      const userSelected = (ans && ans.selected) || [];
+
+      const hint = document.createElement('p');
+      hint.className = 'text-xs font-semibold text-blue-700 mb-2';
+      hint.textContent = q.instruction || '(Pilih semua jawaban yang sesuai)';
+      container.appendChild(hint);
+
+      q.options.forEach(opt => {
+        const isChecked = userSelected.includes(opt.key);
+        const card = document.createElement('label');
+        card.className = `w-full text-left p-3.5 rounded-xl border transition-all text-sm font-medium flex items-start space-x-3 cursor-pointer select-none`;
+
+        if (!isLocked) {
+          card.className += ` border-slate-200 bg-white hover:bg-slate-50`;
+        } else {
+          card.className += ` cursor-not-allowed opacity-90`;
+          if (isChecked) {
+            // Is this selected item valid according to key?
+            const isItemCorrect = q.correctKeys.includes(opt.key);
+            if (isItemCorrect) {
+              card.className += ` bg-emerald-600 border-emerald-600 text-white font-semibold`;
+            } else {
+              card.className += ` bg-rose-600 border-rose-600 text-white font-semibold`;
+            }
+          } else {
+            card.className += ` bg-slate-50 border-slate-200 text-slate-400 opacity-60`;
+          }
+        }
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.value = opt.key;
+        checkbox.name = `ms_${q.id}`;
+        checkbox.checked = isChecked;
+        checkbox.disabled = isLocked;
+        checkbox.className = 'w-4 h-4 mt-0.5 rounded text-blue-600 focus:ring-blue-500';
+
+        const textSpan = document.createElement('span');
+        textSpan.className = 'leading-relaxed flex-grow';
+        textSpan.innerHTML = `<strong>${opt.key}.</strong> ${opt.text}`;
+
+        card.appendChild(checkbox);
+        card.appendChild(textSpan);
+
+        if (isLocked && isChecked) {
+          const badge = document.createElement('span');
+          const isItemCorrect = q.correctKeys.includes(opt.key);
+          badge.className = 'text-xs font-bold uppercase tracking-wider ml-2';
+          badge.textContent = isItemCorrect ? '✓ Dipilih' : '✗ Kurang Tepat';
+          card.appendChild(badge);
+        }
+
+        container.appendChild(card);
+      });
+
+      if (!isLocked) {
+        const lockBtn = document.createElement('button');
+        lockBtn.className = 'w-full mt-3 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm transition-all shadow-sm flex items-center justify-center space-x-2';
+        lockBtn.innerHTML = `
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+          <span>Kunci Jawaban Soal Ini (Hanya 1 Kali Klik)</span>
+        `;
+        lockBtn.onclick = () => submitMultiSelect(q.id - 1);
+        container.appendChild(lockBtn);
+      }
+    }
+
+    function submitMultiSelect(index) {
+      const q = QUESTIONS[index];
+      const checkboxes = document.getElementsByName(`ms_${q.id}`);
+      const selected = [];
+
+      for (const cb of checkboxes) {
+        if (cb.checked) {
+          selected.push(cb.value);
+        }
+      }
+
+      if (selected.length === 0) {
+        showToast("Mohon pilih setidaknya satu opsi sebelum mengunci jawaban!", "warning");
+        return;
+      }
+
+      if (q.maxSelections && selected.length > q.maxSelections) {
+        showToast(`Soal ini mengharuskan memilih tepat ${q.maxSelections} pilihan!`, "warning");
+        return;
+      }
+
+      // Check strict array equality
+      const sortedUser = [...selected].sort();
+      const sortedKey = [...q.correctKeys].sort();
+      const isCorrect = sortedUser.length === sortedKey.length && sortedUser.every((val, i) => val === sortedKey[i]);
+
+      userAnswers[index] = {
+        isLocked: true,
+        isCorrect: isCorrect,
+        selected: selected
+      };
+
+      loadQuestion(index);
+      persistFullSession();
+      showToast(isCorrect ? "Jawaban dicatat!" : "Jawaban dicatat!", isCorrect ? "success" : "error");
+    }
+
+    function renderLockedFeedback(isCorrect) {
+      const notif = document.getElementById('answer-notification');
+      notif.classList.remove('hidden');
+
+      if (isCorrect) {
+        notif.className = 'rounded-xl p-3.5 bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold flex items-center space-x-2';
+        notif.innerHTML = `
+          <svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+          </svg>
+          <span>Jawaban terkunci: <strong>Benar</strong>. Pembahasan lengkap akan dirilis setelah 20 September 2026.</span>
+        `;
+      } else {
+        notif.className = 'rounded-xl p-3.5 bg-rose-50 border border-rose-200 text-rose-800 text-xs font-semibold flex items-center space-x-2';
+        notif.innerHTML = `
+          <svg class="w-4 h-4 text-rose-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+          </svg>
+          <span>Jawaban terkunci: <strong>Kurang Tepat</strong>. Pembahasan lengkap akan dirilis setelah 20 September 2026.</span>
+        `;
+      }
+    }
+
+    function navigateQuestion(step) {
+      const newIdx = currentQuestionIndex + step;
+      if (newIdx >= 0 && newIdx < QUESTIONS.length) {
+        loadQuestion(newIdx);
+        persistFullSession();
+      }
+    }
+
+    function jumpToQuestion(idx) {
+      loadQuestion(idx);
+      persistFullSession();
+    }
+
+    function confirmFinishQuiz() {
+      let unansweredCount = 0;
+      QUESTIONS.forEach((_, i) => {
+        if (!userAnswers[i] || !userAnswers[i].isLocked) {
+          unansweredCount++;
+        }
+      });
+
+      if (unansweredCount > 0) {
+        showToast(`Masih ada ${unansweredCount} soal yang belum dijawab. Kamu tetap bisa menyelesaikan latihan sekarang.`, "info");
+      }
+
+      finishQuiz();
+    }
+
+    function finishQuiz() {
+      if (timerInterval) clearInterval(timerInterval);
+      if (examFinishedTimeFormatted === "-" || !examFinishedTimeFormatted) {
+        examFinishedTimeFormatted = formatRemainingTimeForReport();
+      }
+
+      isExamCompleted = true;
+
+      // Sembunyikan timer dari header saat di halaman closing
+      const timerBadge = document.getElementById('header-timer-badge');
+      if (timerBadge) timerBadge.classList.add('hidden');
+
+      document.getElementById('view-quiz').classList.add('hidden');
+      document.getElementById('view-result').classList.remove('hidden');
+      document.getElementById('view-result').classList.add('flex');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Kunci 1x pengerjaan
+      document.getElementById('btn-retake').classList.add('hidden');
+      document.getElementById('single-attempt-tag').classList.remove('hidden');
+
+      computeAndRenderResults(true);
+      persistFullSession();
+    }
+
+    function computeAndRenderResults(shouldSyncToSheet = false) {
+      let totalCorrect = 0;
+      const pointsPerQuestion = 10; // 10 soal x 10 poin = 100 poin (poin rata)
+
+      QUESTIONS.forEach((_, i) => {
+        if (userAnswers[i] && userAnswers[i].isCorrect) {
+          totalCorrect++;
+        }
+      });
+
+      const finalScore = totalCorrect * pointsPerQuestion;
+      const totalWrong = QUESTIONS.length - totalCorrect;
+      const accuracy = Math.round((totalCorrect / QUESTIONS.length) * 100);
+
+      // Populate student identity in report
+      const reportName = document.getElementById('report-student-name');
+      const reportClass = document.getElementById('report-student-class');
+      const reportTime = document.getElementById('report-student-time');
+      if (reportName) reportName.textContent = studentData.name || '-';
+      if (reportClass) reportClass.textContent = studentData.class || '-';
+      if (reportTime) reportTime.textContent = examFinishedTimeFormatted !== "-" ? examFinishedTimeFormatted : formatRemainingTimeForReport();
+
+      document.getElementById('final-score-display').textContent = finalScore;
+      document.getElementById('final-correct-display').textContent = totalCorrect;
+      document.getElementById('final-wrong-display').textContent = totalWrong;
+      document.getElementById('final-accuracy-display').textContent = `${accuracy}%`;
+
+      // Sub-skill diagnostic calculation
+      const categoryStats = {
+        "Fact & Reality Verification": { total: 0, correct: 0, questions: [1, 2, 4], desc: "Membedakan klaim data empiris objektif dari opini subjektif dan kapabilitas nyata AI vs spekulasi." },
+        "Textual Evidence & Appropriateness": { total: 0, correct: 0, questions: [3, 7], desc: "Ketepatan memilih kutipan teks autentik yang menggambarkan kontroversi utama dan limitasi teknologi." },
+        "Validity & Logical Consistency": { total: 0, correct: 0, questions: [5, 8, 10], desc: "Mengevaluasi cacat logika (fallacies), validitas premis klaim, dan sintesis kesimpulan holistik." },
+        "Authorial Tone & Perspective": { total: 0, correct: 0, questions: [6, 9], desc: "Mengidentifikasi sikap kritis/emosional penulis dan filosofi apresiasi estetika budaya." }
+      };
+
+      QUESTIONS.forEach((q, idx) => {
+        const cat = categoryStats[q.category];
+        if (cat) {
+          cat.total++;
+          if (userAnswers[idx] && userAnswers[idx].isCorrect) {
+            cat.correct++;
+          }
+        }
+      });
+
+      // Format spesifik: subtopik .... (banyak benar/jumlah soal subtopik tersebut) | subtopik .... (banyak benar/jumlah soal subtopik tersebut)
+      const formattedAnalysisString = Object.entries(categoryStats).map(([subtopicName, stat]) => {
+        return `subtopik ${subtopicName} (${stat.correct}/${stat.total})`;
+      }).join(' | ');
+
+      // Render Diagnostic Skills Grid
+      const skillsContainer = document.getElementById('diagnostic-skills-grid');
+      skillsContainer.innerHTML = '';
+      
+      const weakAreas = [];
+
+      for (const [catName, data] of Object.entries(categoryStats)) {
+        const pct = Math.round((data.correct / data.total) * 100);
+        const isMastered = pct >= 70;
+
+        if (!isMastered) {
+          weakAreas.push({ name: catName, pct: pct, questions: data.questions, desc: data.desc });
+        }
+
+        const card = document.createElement('div');
+        card.className = `p-4 rounded-2xl border ${isMastered ? 'bg-slate-50/70 border-slate-200' : 'bg-rose-50/50 border-rose-200'} space-y-2.5`;
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <h5 class="font-bold text-sm text-slate-800">${catName}</h5>
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-extrabold ${isMastered ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'}">
+              ${pct}% (${data.correct}/${data.total})
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed">${data.desc}</p>
+          <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
+            <div class="${isMastered ? 'bg-emerald-500' : 'bg-rose-500'} h-full rounded-full transition-all duration-500" style="width: ${pct}%"></div>
+          </div>
+          <div class="text-[11px] text-slate-400 font-medium">Soal terkait: No. ${data.questions.join(', ')}</div>
+        `;
+        skillsContainer.appendChild(card);
+      }
+
+      // Populate Master Teacher Consultation Guidance
+      const guidance = document.getElementById('consultation-guidance');
+      if (weakAreas.length === 0) {
+        guidance.innerHTML = `
+          <p class="text-slate-700"><strong>Luar Biasa, Brainies!</strong> Kamu telah menunjukkan penguasaan yang sangat solid di seluruh aspek evaluasi teks akademis Bahasa Inggris. Skor kamu merata di seluruh indikator Fact vs. Opinion, Validity, Tone, dan Synthesis.</p>
+          <p class="text-slate-600"><em>Langkah Konsultasi:</em> Jadwalkan sesi Klinik Konsultasi untuk membahas soal-soal HOTS level pengayaan (enrichment) dan teknik optimasi waktu pengerjaan menjelang TKA 2026.</p>
+        `;
+      } else {
+        let adviceItems = weakAreas.map(w => `
+          <li class="flex items-start">
+            <span class="text-amber-700 font-bold mr-2">•</span>
+            <span>
+              <strong>Fokus Bagian: ${w.name} (Akurasi ${w.pct}%)</strong><br>
+              Perlu penguatan pada konsep: ${w.desc}. Diskusikan nomor soal <strong>${w.questions.join(', ')}</strong> dengan Master Teacher BAC Bogor Permata.
+            </span>
+          </li>
+        `).join('');
+
+        guidance.innerHTML = `
+          <p class="text-slate-800 font-semibold">Berikut adalah modul dan topik spesifik yang direkomendasikan untuk kamu bawa ke sesi konsultasi:</p>
+          <ul class="space-y-2 mt-2">
+            ${adviceItems}
+          </ul>
+          <p class="pt-2 text-xs text-amber-800 font-medium">Bawa catatan latihan ini saat konsultasi offline di Brain Academy Bogor Permata agar Master Teacher dapat langsung memberikan latihan terarah pada topik di atas!</p>
+        `;
+      }
+
+      // Render Question Summary Cards
+      const summaryGrid = document.getElementById('question-result-summary');
+      summaryGrid.innerHTML = '';
+
+      QUESTIONS.forEach((q, idx) => {
+        const ans = userAnswers[idx];
+        const isCorrect = ans && ans.isCorrect;
+        const isLocked = ans && ans.isLocked;
+
+        const tile = document.createElement('div');
+        tile.className = `p-3 rounded-xl border text-center font-bold text-xs ${
+          !isLocked
+            ? 'bg-slate-100 border-slate-300 text-slate-500'
+            : isCorrect
+            ? 'bg-emerald-50 border-emerald-300 text-emerald-700'
+            : 'bg-rose-50 border-rose-300 text-rose-700'
+        }`;
+        tile.innerHTML = `
+          <div>Soal ${q.id}</div>
+          <div class="text-[11px] font-medium mt-0.5">${!isLocked ? 'Kosong' : (isCorrect ? '✓ Benar' : '✗ Salah')}</div>
+        `;
+        summaryGrid.appendChild(tile);
+      });
+
+      // Mengirimkan data otomatis ke Google Spreadsheet tab "TKA ENG3"
+      if (shouldSyncToSheet) {
+        sendReportToGoogleSheet({
+          timestamp: new Date().toLocaleString("id-ID", { timeZone: "Asia/Jakarta" }) + " WIB",
+          namaSiswa: studentData.name,
+          kelas: studentData.class,
+          nilai: finalScore,
+          jumlahBenar: totalCorrect,
+          jumlahSalah: totalWrong,
+          sisaWaktu: examFinishedTimeFormatted,
+          analisisLatihan: formattedAnalysisString
+        });
+      }
+    }
+
+    function sendReportToGoogleSheet(payload) {
+      const syncStatus = document.getElementById('cloud-sync-status');
+      if (!syncStatus) return;
+
+      // Jika URL Google Apps Script belum diisi / masih placeholder
+      if (GOOGLE_SCRIPT_WEB_APP_URL.includes("REPLACE_WITH_YOUR_DEPLOYED_WEBAPP_URL")) {
+        syncStatus.className = "inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200";
+        syncStatus.innerHTML = `
+          <svg class="w-3.5 h-3.5 mr-1.5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          </svg>
+          Google Apps Script URL belum dikonfigurasi
+        `;
+        return;
+      }
+
+      fetch(GOOGLE_SCRIPT_WEB_APP_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      })
+      .then(() => {
+        syncStatus.className = "inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200";
+        syncStatus.innerHTML = `
+          <svg class="w-3.5 h-3.5 mr-1.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          Laporan berhasil dicatat ke Spreadsheet TKA ENG3
+        `;
+      })
+      .catch((err) => {
+        console.error("Gagal mengirim ke spreadsheet:", err);
+        syncStatus.className = "inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200";
+        syncStatus.innerHTML = `
+          <svg class="w-3.5 h-3.5 mr-1.5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          </svg>
+          Laporan tersimpan di perangkat lokal
+        `;
+      });
+    }
+
+    function resetAndRetake() {
+      // Tombol dinonaktifkan sesuai aturan 1x pengerjaan
+      showToast("Latihan hanya dapat dikerjakan 1 kali sesuai aturan ujian.", "info");
+    }
+
+    function showToast(message, type = "info") {
+      const container = document.getElementById("toast-container");
+      if (!container) return;
+
+      const toast = document.createElement("div");
+      const bgColors = {
+        success: "bg-emerald-600 text-white shadow-emerald-600/30",
+        error: "bg-rose-600 text-white shadow-rose-600/30",
+        warning: "bg-amber-600 text-white shadow-amber-600/30",
+        info: "bg-slate-800 text-white shadow-slate-800/30"
+      };
+
+      const selectedBg = bgColors[type] || bgColors.info;
+      toast.className = `${selectedBg} pointer-events-auto px-4 py-3 rounded-xl text-xs font-semibold shadow-lg transition-all duration-300 transform translate-y-2 opacity-0 flex items-center space-x-2 border border-white/10`;
+      toast.innerHTML = `<span class="leading-snug">${message}</span>`;
+
+      container.appendChild(toast);
+
+      requestAnimationFrame(() => {
+        toast.classList.remove("translate-y-2", "opacity-0");
+      });
+
+      setTimeout(() => {
+        toast.classList.add("opacity-0", "translate-y-2");
+        setTimeout(() => toast.remove(), 300);
+      }, 3500);
+    }
+  </script>
+</body>
+</html>
